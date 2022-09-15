@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!--link(rel="icon",href="../../favicon.ico")-->
+    <title>VR Web Viewer</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <!-- Custom styles for this template-->
+    <link href="/css/navbar-static-top.css" rel="stylesheet" />
+  </head>
+  <body data-spy="scroll" data-target=".scrollspy">
+    <div class="container">
+        <div class="form-groupvid">
+          <label for="vid">Region ID</label
+          ><input
+            class="form-control"
+            id="vid"
+            type="text"
+            placeholder="Region ID"
+            value="62abfcc4aee85a0022e190f9"
+            name="vrid"
+            readonly=""
+          />
+        </div>
+        <label for="scene">Scene Name: </label
+        ><input
+          class="form-control"
+          id="scene"
+          type="text"
+          placeholder="Scene Name"
+          name="SceneName"
+        /><label for="file">Image File</label
+        ><input
+          class="form-control"
+          id="file"
+          type="file"
+          placeholder="Image"
+          name="file"
+          on
+          change="readSingleFile(this.files)"
+        /><label for="left">Left Position</label>
+        <input
+          class="form-control"
+          id="left"
+          type="text"
+          placeholder="Enter Scene Name to connect"
+          name="leftPos"
+        /><label for="up">Up Position</label>
+        <input
+          class="form-control"
+          id="up"
+          type="text"
+          placeholder="Enter Scene Name to connect"
+          name="upPos"
+        /><label for="right">Right Position</label>
+       <input
+          class="form-control"
+          id="up"
+          type="text"
+          placeholder="Enter Scene Name to connect"
+          name="rightPos"
+        /><label for="down">Down Position</label>
+       <input
+          class="form-control"
+          id="up"
+          type="text"
+          placeholder="Enter Scene Name to connect"
+          name="downPos"
+        />
+        <p ></p>
+        <input class="btn btn-default" type="submit" value="Add" />
+      </form>
+    </div>
+  </body>
+</html>

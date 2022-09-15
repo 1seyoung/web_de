@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!--link(rel="icon",href="../../favicon.ico")-->
+    <title>VR Web Viewer</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <!-- Custom styles for this template-->
+    <link href="/css/navbar-static-top.css" rel="stylesheet" />
+  </head>
+  <body data-spy="scroll" data-target=".scrollspy">
+    <!-- Static navbar-->
+    <nav class="navbar navbar-static-top navbar-default" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button
+            class="navbar-toggle collapsed"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbar"
+            aria-expanded="false"
+            aria-controls="navbar"
+          >
+            <span class="sr-only">Toggle navigation</span
+            ><span class="icon-bar"></span><span class="icon-bar"></span
+            ><span class="icon-bar"></span></button
+          ><a class="navbar-brand" href="#">VR-CMS</a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="nav navbar-nav">
+            <li><a href="/">Home</a></li>
+            <li class="dropdown">
+              <a
+                class="dropdown-toggle"
+                href="#"
+                data-toggle="dropdown"
+                role="button"
+                aria-expanded="false"
+                >Dropdown<span class="caret"></span
+              ></a>
+              <ul class="dropdown-menu" role="menu">
+                <li class="active"><a href="/admin/regions">Admin</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <script>
+        function deleteMe(id) {
+          var url = "/admin/regions/delete/" + id;
+          $.ajax({
+            type: "DELETE",
+            url: url,
+            data: id,
+            success: function (response) {
+              window.location.href = "/admin/regions/";
+            },
+          });
+        }
+
+        function deleteVRScene(id) {
+          var url = "/admin/regions/vrscene_del/" + id;
+          $.ajax({
+            type: "DELETE",
+            url: url,
+            data: id,
+            success: function (response) {
+              window.location.href = "/admin/regions/";
+            },
+          });
+        }
+      </script>
+      <div class="jumbotron">
+        <p>Dongwon1</p>
+        <p>Dongwon1</p>
+        <div></div>
+        1. dongwon :
+        <a
+          class="btn btn-sm btn-primary"
+          href="/admin/regions/update_vr/62ac1b22aee85a0022e19483"
+          role="button"
+          >Update Scene</a
+        ><a
+          class="btn btn-sm btn-danger"
+          role="button"
+          onclick="deleteVRScene('62ac1b22aee85a0022e19483');"
+          >Delete Scene</a
+        >
+        <p></p>
+        <div></div>
+        1. Provence :
+        <a
+          class="btn btn-sm btn-primary"
+          href="/admin/regions/update_vr/62ac1b58aee85a0022e194be"
+          role="button"
+          >Update Scene</a
+        ><a
+          class="btn btn-sm btn-danger"
+          role="button"
+          onclick="deleteVRScene('62ac1b58aee85a0022e194be');"
+          >Delete Scene</a
+        >
+        <p></p>
+        <div></div>
+        1.Barcelona :
+        <a
+          class="btn btn-sm btn-primary"
+          href="/admin/regions/update_vr/62ac1b88aee85a0022e194de"
+          role="button"
+          >Update Scene</a
+        ><a
+          class="btn btn-sm btn-danger"
+          role="button"
+          onclick="deleteVRScene('62ac1b88aee85a0022e194de');"
+          >Delete Scene</a
+        >
+        <p></p>
+        <div></div>
+        1.Eiffel Tower :
+        <a
+          class="btn btn-sm btn-primary"
+          href="/admin/regions/update_vr/62ac1bdfaee85a0022e1950a"
+          role="button"
+          >Update Scene</a
+        ><a
+          class="btn btn-sm btn-danger"
+          role="button"
+          onclick="deleteVRScene('62ac1bdfaee85a0022e1950a');"
+          >Delete Scene</a
+        >
+        <p></p>
+        <div></div>
+        1.grinich :
+        <a
+          class="btn btn-sm btn-primary"
+          href="/admin/regions/update_vr/62ac1f78aee85a0022e1988b"
+          role="button"
+          >Update Scene</a
+        ><a
+          class="btn btn-sm btn-danger"
+          role="button"
+          onclick="deleteVRScene('62ac1f78aee85a0022e1988b');"
+          >Delete Scene</a
+        >
+        <p></p>
+        <div></div>
+        1.science :
+        <a
+          class="btn btn-sm btn-primary"
+          href="/admin/regions/update_vr/62ac1fcdaee85a0022e198b0"
+          role="button"
+          >Update Scene</a
+        ><a
+          class="btn btn-sm btn-danger"
+          role="button"
+          onclick="deleteVRScene('62ac1fcdaee85a0022e198b0');"
+          >Delete Scene</a
+        >
+        <p></p>
+        <div></div>
+        1. isle :
+        <a
+          class="btn btn-sm btn-primary"
+          href="/admin/regions/update_vr/62ac206faee85a0022e198f6"
+          role="button"
+          >Update Scene</a
+        ><a
+          class="btn btn-sm btn-danger"
+          role="button"
+          onclick="deleteVRScene('62ac206faee85a0022e198f6');"
+          >Delete Scene</a
+        >
+        <p></p>
+        <div></div>
+        1.niagara :
+        <a
+          class="btn btn-sm btn-primary"
+          href="/admin/regions/update_vr/62ac215daee85a0022e19924"
+          role="button"
+          >Update Scene</a
+        ><a
+          class="btn btn-sm btn-danger"
+          role="button"
+          onclick="deleteVRScene('62ac215daee85a0022e19924');"
+          >Delete Scene</a
+        >
+        <p></p>
+        <div></div>
+        1.last :
+        <a
+          class="btn btn-sm btn-primary"
+          href="/admin/regions/update_vr/62ac21f6aee85a0022e19950"
+          role="button"
+          >Update Scene</a
+        ><a
+          class="btn btn-sm btn-danger"
+          role="button"
+          onclick="deleteVRScene('62ac21f6aee85a0022e19950');"
+          >Delete Scene</a
+        >
+        <p></p>
+        <a
+          class="btn btn-primary"
+          href="/admin/regions/add_vr/62abfcc4aee85a0022e190f9"
+          role="button"
+          >Add VR »</a
+        ><a
+          class="btn btn-danger"
+          role="button"
+          onclick="deleteMe('62abfcc4aee85a0022e190f9');"
+          >Delete Region</a
+        >
+      </div>
+
+      <a class="btn btn-primary" href="/admin/regions/new" role="button"
+        >Add new region</a
+      >
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  </body>
+</html>

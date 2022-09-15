@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Space List</title>
+    
+        <!-- Bootstrap CSS -->
+        <link
+          rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous"
+        />
+    
+        <style>
+          body {
+            min-height: 100vh;
+    
+            background: -webkit-gradient(
+              linear,
+              left bottom,
+              right top,
+              from(#e3e5f8),
+              to(#e3e5f8)
+            );
+            background: -webkit-linear-gradient(
+              bottom left,
+              #e3e5f8 0%,
+              #e3e5f8 100%
+            );
+            background: -moz-linear-gradient(bottom left, #e3e5f8 0%, #e3e5f8 100%);
+            background: -o-linear-gradient(bottom left, #e3e5f8 0%, #e3e5f8 100%);
+            background: linear-gradient(to top right, #e3e5f8 0%, #e3e5f8 100%);
+          }
+    
+          .input-form {
+            max-width: 680px;
+    
+            margin-top: 80px;
+            padding: 32px;
+    
+            background: #fff;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+            -webkit-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
+            -moz-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
+            box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
+          }
+        </style>
+    </head>
+    <body data-spy="scroll" data-target=".scrollspy">
+        <div class="container">
+            <div class="form-groupvid">
+            <label for="vid">Region ID</label
+            ><input
+                class="form-control"
+                id="vid"
+                type="text"
+                placeholder="Region ID"
+                value="62abfcc4aee85a0022e190f9"
+                name="vrid"
+                readonly=""
+            />
+            </div>
+            <label for="scene">Scene Name: </label
+            ><input
+            class="form-control"
+            id="scene"
+            type="text"
+            placeholder="Scene Name"
+            name="SceneName"
+            /><label for="file">Image File</label
+            ><input
+            class="form-control"
+            id="file"
+            type="file"
+            placeholder="Image"
+            name="file"
+            on
+            change="readSingleFile(this.files)"
+            /><label for="left">Left Position</label>
+            <input
+            class="form-control"
+            id="left"
+            type="text"
+            placeholder="Enter Scene Name to connect"
+            name="leftPos"
+            /><label for="up">Up Position</label>
+            <input
+            class="form-control"
+            id="up"
+            type="text"
+            placeholder="Enter Scene Name to connect"
+            name="upPos"
+            /><label for="right">Right Position</label>
+        <input
+            class="form-control"
+            id="up"
+            type="text"
+            placeholder="Enter Scene Name to connect"
+            name="rightPos"
+            /><label for="down">Down Position</label>
+        <input
+            class="form-control"
+            id="up"
+            type="text"
+            placeholder="Enter Scene Name to connect"
+            name="downPos"
+            />
+            <p ></p>
+            <button
+            class="btn btn-primary btn-lg btn-block"
+            border:none
+            type="submit"
+            value="Add scene"
+          >
+            create
+          </button>
+            
+        </form>
+        </div>
+  </body>
+</html>
